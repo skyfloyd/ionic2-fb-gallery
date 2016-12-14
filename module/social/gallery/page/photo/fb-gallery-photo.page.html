@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons left>
+            <button ion-button (click)="dismiss()" color="primary" class="large-icon">
+                <ion-icon name="backspace"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title class="center-text">
+            {{getAlbumInfo().name}}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="card-background-page">
+    <ion-card *ngFor="let photo of getPhotoList()" (click)="openPhoto( photo )">
+        <img [src]="photo.images[ 0 ].source"/>
+        <div class="card-title">{{photo.name}}</div>
+    </ion-card>
+
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content
+                loadingSpinner="bubbles"
+                loadingText="Loading more photos...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

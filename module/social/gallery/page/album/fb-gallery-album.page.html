@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons left>
+            <button ion-button (click)="dismiss()" color="primary" class="large-icon">
+                <ion-icon name="backspace"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title class="center-text">
+            Albums
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="card-background-page" id="fbGgalleryAlbumContainerId">
+    <ion-card *ngFor="let album of getAlbumList()" (click)="openAlbum( album )">
+        <img [src]="album.cover_photo.images[ 0 ].source"/>
+        <div class="card-title">{{album.name}}</div>
+    </ion-card>
+
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content
+                loadingSpinner="bubbles"
+                loadingText="Loading more albums...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>
