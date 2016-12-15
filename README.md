@@ -24,7 +24,7 @@ Thats all.
         this.socialApi.init();
     }
 ```
-This plugin use `ionic2-fb-api` plugin to connect with Facebook. Please take a look to [https://github.com/skyfloyd/ionic2-fb-api/](ionic2-fb-api documentation) for more info.
+This plugin use [ionic2-fb-api](https://github.com/skyfloyd/ionic2-fb-api/) plugin to connect with Facebook. Please take a look to [ionic2-fb-api documentation](https://github.com/skyfloyd/ionic2-fb-api/) for more info.
 
   * You have 2 options to open Facebook gallery photo picker dialog
     1. Call `FbGallery` `init` function. It takes your callback as it only parameter. Example here:
