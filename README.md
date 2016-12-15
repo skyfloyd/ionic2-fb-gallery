@@ -27,7 +27,7 @@ Thats all.
 This plugin use [ionic2-fb-api](https://github.com/skyfloyd/ionic2-fb-api/) plugin to connect with Facebook. Please take a look to [ionic2-fb-api documentation](https://github.com/skyfloyd/ionic2-fb-api/) for more info.
 
   * You have 2 options to open Facebook gallery photo picker dialog
-  1. Call `FbGallery` `init` function. It takes your callback as it's only parameter. Example here:
+    * Call `FbGallery` `init` function. It takes your callback as it's only parameter. Example here:
     ```bash
         constructor( private fbGallery:FbGallery ) {}
 
@@ -38,7 +38,7 @@ This plugin use [ionic2-fb-api](https://github.com/skyfloyd/ionic2-fb-api/) plug
         }
     ```
 
-  2. Use `fb-gallery` directive. Example here:
+    * Use `fb-gallery` directive. Example here:
 
       **HTML file**
       ```bash
