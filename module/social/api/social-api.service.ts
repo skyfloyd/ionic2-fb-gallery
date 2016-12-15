@@ -85,7 +85,11 @@ export class SocialApiService extends EventListenerService{
         }
     }
 
-    public login():void{
+    public login( permissions?:Array<string> ):void{
+        if( typeof permissions !== "undefined" && permissions !== null ){
+            this.appPermissions = permissions;
+        }
+        
         Facebook.login( this.appPermissions ).then((response) => {
             this.onFbLoginStatus( response );
         }).catch((error) => {
