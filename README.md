@@ -12,8 +12,6 @@ Find more details here [https://ionicframework.com/docs/v2/native/facebook/](htt
   * Copy `ionic2-fb-gallery` `module` folder to `app` folder
   * Import `FbModule` to your app base `@NgModule`
 
-Thats all.
-
 
 ## Usage
 
