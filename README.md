@@ -55,4 +55,9 @@ This plugin use [ionic2-fb-api](https://github.com/skyfloyd/ionic2-fb-api/) plug
           }
       ```
       
+## DEMO
+      
+[ionic2-fb-api DEMO](https://www.youtube.com/watch?v=dhC_6VZnI1w)
+      
 Thats all.
+
